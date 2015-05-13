@@ -3552,6 +3552,46 @@
 -------------------------------------------- */
 /* COMPONENT
 -------------------------------------------- */
+.modal-backdrop {
+  background-color: #fff;
+}
+
+.modal-backdrop.in {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+
+.modal .close {
+  top: -20px;
+  right: -20px;
+  color: #2ecc71;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.modal .modal-dialog {
+  margin-top: 15%;
+}
+.modal .modal-content {
+  border: 2px solid #2ecc71;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.modal .modal-header {
+  border-bottom: none;
+}
+.modal .modal-body a {
+  font-weight: bold;
+}
+.modal .modal-body .amp {
+  font-size: 26px;
+  margin: 0 5px;
+  font-style: italic;
+}
+
 /* PLUGINS : _
 -------------------------------------------- */
 /* DEFAULT COLOR
@@ -3575,6 +3615,9 @@ body {
 a {
   color: #2c3e50;
 }
+a:hover, a:focus {
+  color: #233140;
+}
 
 /* HEADER
 -------------------------------------------- */
@@ -3589,6 +3632,21 @@ a {
 #header .navbar-toggle .icon-bar {
   background-color: #27ae60;
 }
+#header .navbar-nav {
+  font-weight: bold;
+}
+
+#footer {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+#footer a {
+  font-weight: bold;
+}
+#footer a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #e74c3c;
+}
 
 /* WRAP
 -------------------------------------------- */
@@ -3596,51 +3654,91 @@ a {
   padding-top: 65px;
 }
 
-.surat {
+.bismillah {
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .bismillah {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+#read {
   font-size: 1.2em;
 }
-.surat li {
+#read li {
+  position: relative;
   background-color: #ecf0f1;
   margin-bottom: 15px;
+  padding: 15px;
+  border-color: #2ecc71;
+  border-style: solid;
+  border-width: 0 0 0 4px;
+  cursor: url(../img/check.png), auto;
   -moz-transition: all ease;
   -o-transition: all ease;
   -webkit-transition: all ease;
   transition: all ease;
 }
-.surat.utf li {
-  border-left: 4px solid #2ecc71;
-  padding: 15px;
-}
-.surat.utf li.done {
+#read li.done {
   background-color: #cfd9db;
   color: #959ea7;
-  border-left: 4px solid #208e4e;
-  font-style: italic;
+  border-color: #208e4e;
 }
-.surat.arabic {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.surat.arabic li {
-  border-right: 4px solid #2ecc71;
-  padding: 15px 10px;
-  text-align: right;
-}
-@media (min-width: 768px) {
-  .surat.arabic li {
-    padding: 15px 30px;
-    margin-bottom: 30px;
-  }
-}
-.surat.arabic li.done {
-  background-color: #cfd9db;
-  border-right: 4px solid #208e4e;
-}
-.surat.arabic li.done img {
+#read li.done .arabic {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
 }
-.surat.arabic li img {
+#read li span {
+  display: block;
+}
+#read li span.arabic img {
   max-width: 100%;
+}
+#read li span.latin {
+  font-weight: bold;
+}
+#read li span.arti {
+  font-style: italic;
+}
+#read.latin li span.arabic {
+  display: none;
+}
+#read.latin li span.arti {
+  display: none;
+}
+#read.arabic {
+  list-style: none;
+}
+#read.arabic li {
+  border-width: 0 4px 0 0;
+}
+#read.arabic li span.arabic {
+  float: none;
+  text-align: right;
+}
+#read.arabic li span.latin {
+  display: none;
+}
+#read.arabic li span.arti {
+  display: none;
+}
+@media (max-width: 767px) {
+  #read.tafsir li span.arabic {
+    border-bottom: 1px solid #dde4e6;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 768px) {
+  #read.tafsir li span.arabic {
+    float: right;
+  }
+}
+
+#readguide {
+  position: absolute;
+  left: 15%;
+  top: 0;
 }

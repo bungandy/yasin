@@ -1,2 +1,53 @@
 /* COMPONENT
 -------------------------------------------- */
+$cloud          : #ecf0f1;
+
+$emerald        : #2ecc71;
+$nephritis      : #27ae60;
+
+$midnightblue   : #2c3e50;
+
+$carrot         : #e67e22;
+
+$alizarin       : #e74c3c;
+
+$peterriver     : #3498db;
+
+.modal-backdrop{
+	background-color: #fff;
+}
+.modal-backdrop.in{
+	@include opacity(0.9);
+}
+
+.modal{
+	.close{
+		// float: none;
+		// position: absolute;
+		top: -20px;
+		right: -20px;
+		color: $emerald;
+		@include opacity(1);
+	}
+	.modal-dialog{
+		margin-top: 15%;
+	}
+	.modal-content{
+		border: 2px solid $emerald;
+		@include border-radius(0px);
+		@include box-shadow(none);
+	}
+	.modal-header{
+		border-bottom: none;
+	}
+	.modal-body{
+		a{
+			font-weight: bold;
+		}
+		.amp{
+			font-size: 26px;
+			margin: 0 5px;
+			font-style: italic;
+		}
+	}
+}

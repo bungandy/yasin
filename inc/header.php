@@ -10,13 +10,13 @@
 			<a href="../" class="navbar-brand">YASIN.CO</a>
 		</div>
 	<nav class="collapse navbar-collapse bs-navbar-collapse">
-		<ul class="nav navbar-nav">
-			<li><a href="#">Latin</a></li>
-			<li><a href="#">Arabic</a></li>
-			<li><a href="#">Tafsir</a></li>
+		<ul class="filter nav navbar-nav">
+			<li><a href="#" class="surat" data-lang="latin">Latin</a></li>
+			<li><a href="#" class="surat" data-lang="arabic">Arabic</a></li>
+			<li><a href="#" class="surat" data-lang="tafsir">Tafsir</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="#">About</a></li>
+			<li><a id="btnAbout" href="#">About</a></li>
 		</ul>
 	</nav>
 	</div>

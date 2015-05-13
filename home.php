@@ -12,15 +12,17 @@
     <div id="wrap">
     	<section class="container">
     		<div class="text-center">
-    			<h1>بسم الله الرحمن الرحيم</h1>
+    			<h1 class="bismillah">بسم الله الرحمن الرحيم</h1>
     		</div>
-	    	<ol class="surat arabic">
-				<?php for($i=1; $i<84; $i++){ ?>
-				<li><img src="assets/img/yasin/surat_<?php echo $i;?>.png"></li>
-				<?php } ?>
-			</ol>
+
+            <ol id="read" class="tafsir">
+                <?php include('inc/surat.php');?>
+            </ol>
+
 	    </section>
     </div>
+
+    <?php include('inc/modal.php');?>
 
     <?php include('inc/footer.php');?>
 
