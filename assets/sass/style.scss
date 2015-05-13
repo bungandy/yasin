@@ -52,6 +52,8 @@ $carrot         : #e67e22;
 
 $alizarin       : #e74c3c;
 
+$peterriver     : #3498db;
+
 /* MIXIN
 -------------------------------------------- */
 @mixin image-2x($image, $width, $height) {
@@ -80,7 +82,7 @@ body{
     font-smoothing: antialiased;
 }
 a{
-    color: $alizarin;
+    color: $midnightblue;
 }
 
 /* HEADER
