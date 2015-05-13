@@ -3623,11 +3623,14 @@ a:hover, a:focus {
 -------------------------------------------- */
 #header {
   border-bottom: 1px solid #ecf0f1;
-  background-color: rgba(255, 255, 255, 0.83);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 #header .navbar-brand {
   color: #27ae60;
   font-weight: bold;
+}
+#header .navbar-brand span {
+  color: #bdc3c7;
 }
 #header .navbar-toggle .icon-bar {
   background-color: #27ae60;
@@ -3655,12 +3658,12 @@ a:hover, a:focus {
 }
 
 .bismillah {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  font-size: 24px;
 }
 @media (min-width: 768px) {
   .bismillah {
     font-size: 50px;
-    margin-bottom: 30px;
   }
 }
 
@@ -3672,9 +3675,6 @@ a:hover, a:focus {
   background-color: #ecf0f1;
   margin-bottom: 15px;
   padding: 15px;
-  border-color: #2ecc71;
-  border-style: solid;
-  border-width: 0 0 0 4px;
   cursor: url(../img/check.png), auto;
   -moz-transition: all ease;
   -o-transition: all ease;
@@ -3702,6 +3702,11 @@ a:hover, a:focus {
 #read li span.arti {
   font-style: italic;
 }
+@media (min-width: 768px) {
+  #read.latin li {
+    border-left: 4px solid #2ecc71;
+  }
+}
 #read.latin li span.arabic {
   display: none;
 }
@@ -3711,8 +3716,16 @@ a:hover, a:focus {
 #read.arabic {
   list-style: none;
 }
-#read.arabic li {
-  border-width: 0 4px 0 0;
+@media (max-width: 767px) {
+  #read.arabic {
+    margin: 0 -15px;
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  #read.arabic li {
+    border-right: 4px solid #2ecc71;
+  }
 }
 #read.arabic li span.arabic {
   float: none;
@@ -3723,6 +3736,20 @@ a:hover, a:focus {
 }
 #read.arabic li span.arti {
   display: none;
+}
+#read.tafsir {
+  list-style: none;
+}
+@media (max-width: 767px) {
+  #read.tafsir {
+    margin: 0 -15px;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  #read.tafsir li {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 767px) {
   #read.tafsir li span.arabic {
@@ -3739,6 +3766,11 @@ a:hover, a:focus {
 
 #readguide {
   position: absolute;
-  left: 15%;
-  top: 0;
+  bottom: 0;
+  left: 50%;
+}
+@media (min-width: 768px) {
+  #readguide {
+    left: 25%;
+  }
 }

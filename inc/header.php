@@ -7,16 +7,16 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="../" class="navbar-brand">YASIN</a>
+			<a href="../" class="navbar-brand">YASIN<span>.id</span></a>
 		</div>
 	<nav class="collapse navbar-collapse bs-navbar-collapse">
 		<ul class="filter nav navbar-nav">
-			<li><a href="#" class="surat" data-lang="latin">Latin</a></li>
-			<li><a href="#" class="surat" data-lang="arabic">Arabic</a></li>
-			<li><a href="#" class="surat" data-lang="tafsir">Tafsir</a></li>
+			<li data-toggle="collapse" data-target=".bs-navbar-collapse"><a href="#" class="surat" data-lang="latin">Latin</a></li>
+			<li data-toggle="collapse" data-target=".bs-navbar-collapse"><a href="#" class="surat" data-lang="arabic">Arabic</a></li>
+			<li data-toggle="collapse" data-target=".bs-navbar-collapse"><a href="#" class="surat" data-lang="tafsir">Tafsir</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<li><a id="btnAbout" href="#">About</a></li>
+			<li data-toggle="collapse" data-target=".bs-navbar-collapse"><a id="btnAbout" href="#">About</a></li>
 		</ul>
 	</nav>
 	</div>

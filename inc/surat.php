@@ -1,5 +1,5 @@
 <li>
-    <div id="readguide" data-toggle="popover" data-placement="top" data-trigger="focus" data-content="Click on the number when done read it"></div>
+    <div id="readguide" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Click when done read it"></div>
     <span class="arabic"><img src="assets/img/yasin/surat_1.png"></span>
     <span class="latin">Yaa siin</span>
     <span class="arti">Yaa siin</span></li>
