@@ -3628,6 +3628,7 @@ a:hover, a:focus {
 #header .navbar-brand {
   color: #27ae60;
   font-weight: bold;
+  padding: 10px 15px;
 }
 #header .navbar-brand span {
   color: #bdc3c7;
@@ -3715,11 +3716,11 @@ a:hover, a:focus {
 }
 #read.arabic {
   list-style: none;
+  padding: 0;
 }
 @media (max-width: 767px) {
   #read.arabic {
     margin: 0 -15px;
-    padding: 0;
   }
 }
 @media (min-width: 768px) {
@@ -3739,11 +3740,11 @@ a:hover, a:focus {
 }
 #read.tafsir {
   list-style: none;
+  padding: 0;
 }
 @media (max-width: 767px) {
   #read.tafsir {
     margin: 0 -15px;
-    padding: 0;
   }
 }
 @media (max-width: 767px) {
@@ -3762,6 +3763,9 @@ a:hover, a:focus {
   #read.tafsir li span.arabic {
     float: right;
   }
+}
+#read.tafsir li span.arti {
+  margin-top: 15px;
 }
 
 #readguide {

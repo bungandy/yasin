@@ -7,7 +7,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="../" class="navbar-brand">YASIN<span>.id</span></a>
+			<a href="../" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>
 		</div>
 	<nav class="collapse navbar-collapse bs-navbar-collapse">
 		<ul class="filter nav navbar-nav">

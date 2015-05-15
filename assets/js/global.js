@@ -2,10 +2,17 @@ $(function(){
 
 	$('#readguide').popover('show');
 
+	$('html,body').on('click',function(){
+		$('#readguide').popover('hide');
+	});
+
+	setTimeout(function(){
+		$('#readguide').popover('hide');
+	},5000);
+
 	// Done read
 	$('#read li').on('click',function(){
 		$(this).addClass('done');
-		$('#readguide').popover('hide');
 	});
 
 	// Read

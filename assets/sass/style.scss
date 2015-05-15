@@ -99,6 +99,7 @@ a{
     .navbar-brand{
         color: $nephritis;
         font-weight: bold;
+        padding: 10px 15px;
 
         span{
             color: $silver;
@@ -202,9 +203,9 @@ a{
 
     &.arabic{
         list-style: none;
+        padding: 0;
         @media(max-width:767px){
             margin: 0 -15px;
-            padding: 0;
         }
         li{
             @media(min-width:768px){
@@ -228,9 +229,9 @@ a{
 
     &.tafsir{
         list-style: none;
+        padding: 0;
         @media(max-width:767px){
             margin: 0 -15px;
-            padding: 0;
         }
         li{
             @media(max-width:767px){
@@ -246,6 +247,9 @@ a{
                     @media(min-width:768px){
                         float: right;
                     }
+                }
+                &.arti{
+                    margin-top: 15px;
                 }
             }
         }
